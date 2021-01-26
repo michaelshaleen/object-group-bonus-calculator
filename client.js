@@ -3,32 +3,32 @@ const employees = [
     name: 'Atticus',
     employeeNumber: '2405',
     annualSalary: '47000',
-    reviewRating: 3
+    reviewRating: 3,
   },
   {
     name: 'Jem',
     employeeNumber: '62347',
     annualSalary: '63500',
-    reviewRating: 4
+    reviewRating: 4,
   },
   {
     name: 'Scout',
     employeeNumber: '6243',
     annualSalary: '74750',
-    reviewRating: 5
+    reviewRating: 5,
   },
   {
     name: 'Robert',
     employeeNumber: '26835',
     annualSalary: '66000',
-    reviewRating: 1
+    reviewRating: 1,
   },
   {
     name: 'Mayella',
     employeeNumber: '89068',
     annualSalary: '35000',
-    reviewRating: 1
-  }
+    reviewRating: 1,
+  },
 ];
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
@@ -40,4 +40,17 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+console.log(employees);
+// employee in param will be object
+function employeeBonusCalculator(employee) {
+  const newEmployeeObject = {};
+  console.log('test');
+  //loop through employee information
+  for(let i = 0; i < employee.length; i++;){
+    if(employee.reviewRating <= 2){
+      //does not receive bonus
+    }
+  }
+}
+
+employeeBonusCalculator();
